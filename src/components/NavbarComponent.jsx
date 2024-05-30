@@ -3,6 +3,10 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { navLinks } from '../data/index';
 
+const redirectToInstagram = () => {
+  window.open('https://instagram.com/renaissan.ryand', '_blank');
+};
+
 const NavbarComponent = () => {
   const [changeColor, setChangeColor] = useState(false);
 
@@ -38,7 +42,7 @@ const NavbarComponent = () => {
         className={changeColor ? 'color-active' : ""}
       >
         <Container>
-          <Navbar.Brand href="#home" className="fs-3 fw-bold text-danger">Er Percivale.</Navbar.Brand>
+          <Navbar.Brand href="#home" className="fs-3 fw-bold text-danger">Supernova.</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto text-center">
@@ -55,7 +59,7 @@ const NavbarComponent = () => {
               ))}
             </Nav>
             <div className="text-center">
-              <button className="btn btn-outline-danger">Join With Us</button>
+              <button className="btn btn-outline-danger" onClick={redirectToInstagram}>Contact Me</button>
             </div>
           </Navbar.Collapse>
         </Container>

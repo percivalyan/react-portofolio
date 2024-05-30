@@ -1,35 +1,33 @@
 // Route Doom
-import { Routes, Route} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 // Components
-import  NavbarComponent from './components/NavbarComponent';
-import  FooterComponent from './components/FooterComponent';
+import NavbarComponent from './components/NavbarComponent';
+import FooterComponent from './components/FooterComponent';
 
 // Pages
-// URL Utama dalam HomePage
 import HomePage from './pages/HomePage';
-import KelasPage from './pages/KelasPage';
-import TestimonialPage from './pages/TestimonialPage';
-import FaqPage from './pages/FaqPage';
-import SyaratPage from './pages/SyaratPage';
+import AboutMePage from './pages/AboutMe';
+import Project from './pages/Project';
+import Certificate from './pages/Certificate';
+import Criticism from './pages/Criticism';
 
 function App() {
-  return <div>
-    
-    <NavbarComponent />
-
-    <Routes>
-    
-      <Route path="/" Component={HomePage}/>
-      <Route path="/kelas" Component={KelasPage}/>
-      <Route path="/testimonial" Component={TestimonialPage}/>
-      <Route path="/faq" Component={FaqPage}/>
-      <Route path="/syaratketen" Component={SyaratPage}/>
+  return (
+    <div>
+      <NavbarComponent />
       
-    </Routes>
-
-    {/* <FooterComponent /> */}
-  </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutMePage />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/certificate" element={<Certificate />} />
+        <Route path="/criticism" element={<Criticism />} />
+      </Routes>
+      
+      <FooterComponent />
+    </div>
+  );
 }
 
-export default App
+export default App;
