@@ -19,9 +19,9 @@ const FooterComponent = () => {
             <h5 className='title-text'>Quick Links</h5>
             <ul className="list-unstyled">
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/services">Services</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
+              <li><Link to="/about">About Me</Link></li>
+              <li><Link to="/project">Project</Link></li>
+              <li><Link to="/certificate">Certificate</Link></li>
             </ul>
           </Col>
           <Col md={4} className="text-center mb-3">
