@@ -1,9 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-
-// CSS
-import "./dist/css/main.css";
+import './dist/css/main.css'; // Path harus sesuai dengan struktur folder proyekmu
 
 // Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
