@@ -1,11 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import ReactPorto from "../assets/img/project/react_porto2.png";
-import LaravelHima from "../assets/img/project/laravel_hima.png";
-import InvenPhp from "../assets/img/project/inven_php.png";
+import ReactPorto from "../assets/img/assets-porto/vite-porto.png";
+import LaravelHima from "../assets/img/assets-porto/laravel-web.png";
+import InvenPhp from "../assets/img/assets-porto/stockbarang-bs-admin.png";
 import InvenFlutter from "../assets/img/project/inven_flutter.jpg";
-import SpringApi from "../assets/img/project/spring_api.png";
+import SpringApi from "../assets/img/assets-porto/react-spring.png";
 import ReactForm from "../assets/img/project/react_form.png";
 import HeroImage from "../assets/img/commandseal.png";
 
@@ -30,7 +30,7 @@ const HomePage = () => {
             <Col lg="6" className="text-center">
               <h1 className="mb-4">
                 <span>Ryanda Deanova</span><br />
-               Full Stack Web Developer <br />
+               Full Stack Developer <br />
               </h1>
               <p className="mb-4">
               May I enjoy my life and art. Respected for all men in all time. Always accompanied by happiness and blessed by fortune.
@@ -88,7 +88,7 @@ const HomePage = () => {
             <ProjectBox image={InvenPhp} title="Web Gudang" description="Website Gudang" />
             <ProjectBox image={InvenFlutter} title="Aplikasi Gudang" description="Aplikasi Android Gudang" />
             <ProjectBox image={SpringApi} title="Spring API" description="Spring API" />
-            <ProjectBox image={ReactForm} title="Formulir React" description="Front End React Formulir" />
+            {/* <ProjectBox image={ReactForm} title="Formulir React" description="Front End React Formulir" /> */}
           </Row>
         </Container>
       </div>
